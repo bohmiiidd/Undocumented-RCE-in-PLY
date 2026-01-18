@@ -1,8 +1,19 @@
-# 🚨 Undocumented RCE in PLY via `picklefile` Parameter
+# Security Advisory — CVE-2025-56005
+## 🚨 Undocumented RCE in PLY via `picklefile` Parameter
 
-> 📅 Reported by: **Ahmed Abd**  
-> 🗓️ Date: **July 1, 2025**  
-> 🐍 Affects: [PLY (Python Lex-Yacc)](http://www.dabeaz.com/ply/)
+
+>  Reported by: **Ahmed Abd**  
+>  Date: **July 1, 2025**  
+>  Affected Product: PLY (Python Lex-Yacc)
+>  Affected Version: 3.11 (PyPI distribution)
+
+## Impact
+
+An attacker who can control or replace a `.pkl` file supplied to the `picklefile` parameter of `yacc()` can achieve arbitrary code execution during parser initialization.
+
+## Affected Component
+
+`ply/yacc.py` — `LRTable.read_pickle()` via `yacc(picklefile=...)`
 
 ## 📌 Summary
 
@@ -18,7 +29,7 @@ The issue arises because `picklefile` allows loading parsing tables from a Pytho
 - **Issue:** Deserializes a pickle file using `pickle.load()` with no validation
 - **Impact:** Arbitrary command execution if the attacker can control the `.pkl` file
 - **Exposure Risk:** High in environments where pickle files are stored remotely or shared
-- **CVE Status:** ⚠️ *Unassigned* (may warrant CVE depending on maintainer response)
+- **This issue is tracked as **CVE‑2025‑56005**.:** ⚠️ CVE‑2025‑56005
 
 ---
 
