@@ -2,15 +2,16 @@
 
 ### 🚨 Undocumented Remote Code Execution in PLY via `picklefile` Parameter
 
-**CVE ID:** CVE‑2025‑56005 (**RESERVED**)
-**Reported by:** Ahmed Abdelmoumen
-**Disclosure Date:** July 1, 2025
-**Affected Product:** PLY (Python Lex‑Yacc)
-**Affected Version:** 3.11 (PyPI distribution)
-**Vendor:** PLY (Python Lex‑Yacc)
-**Affected Component:** ply/yacc.py` — `LRTable.read_pickle()` via `yacc(picklefile=...)`
+```
+CVE ID: CVE‑2025‑56005 (**RESERVED**)
+Reported by: Ahmed Abdelmoumen
+Disclosure Date: July 1, 2025
+Affected Product: PLY (Python Lex‑Yacc)
+Affected Version: 3.11 (PyPI distribution)
+Vendor: PLY (Python Lex‑Yacc)
+Affected Component:** ply/yacc.py` — `LRTable.read_pickle()` via `yacc(picklefile=...)`
 
-
+```
 ## Summary
 
 An undocumented and unsafe feature in the PyPI‑distributed version of **PLY 3.11** allows **arbitrary code execution** when the `yacc()` function is invoked with the `picklefile` parameter.
