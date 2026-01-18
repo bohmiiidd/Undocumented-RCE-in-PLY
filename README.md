@@ -29,7 +29,7 @@ The issue arises because `picklefile` allows loading parsing tables from a Pytho
 - **Issue:** Deserializes a pickle file using `pickle.load()` with no validation
 - **Impact:** Arbitrary command execution if the attacker can control the `.pkl` file
 - **Exposure Risk:** High in environments where pickle files are stored remotely or shared
-- **This issue is tracked as **CVE‑2025‑56005**.:** ⚠️ CVE‑2025‑56005
+- **This issue is tracked as **CVE‑2025‑56005**.:** CVE‑2025‑56005
 
 ---
 
