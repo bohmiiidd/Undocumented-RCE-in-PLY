@@ -4,7 +4,7 @@
 
 ```
 CVE ID: CVE‑2025‑56005
-Reported by: Ahmed Abdelmoumen
+Reported by: Ahmed Abd
 Disclosure Date: July 1, 2025
 Affected Product: PLY (Python Lex‑Yacc)
 Affected Version: 3.11 (PyPI distribution)
