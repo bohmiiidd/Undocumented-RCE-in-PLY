@@ -1,6 +1,6 @@
-# Security Advisory — CVE‑2025‑56005
 
-### 🚨 Undocumented Remote Code Execution in PLY via `picklefile` Parameter
+
+# 🚨 Undocumented Remote Code Execution in PLY CVE‑2025‑56005
 
 ```
 CVE ID: CVE‑2025‑56005 (**RESERVED**)
@@ -140,13 +140,6 @@ parser.parse('example')
 
 ---
 
-## CVE Status
-
-This issue is tracked as **CVE‑2025‑56005** and is currently **RESERVED**.
-
-The CVE entry will be updated once a public advisory reference is finalized and submitted to MITRE.
-
----
 
 ## References
 
@@ -156,11 +149,4 @@ The CVE entry will be updated once a public advisory reference is finalized and 
 * Proof of Concept Repository:
   [https://github.com/bohmiiidd/Undocumented-RCE-in-PLY](https://github.com/bohmiiidd/Undocumented-RCE-in-PLY)
 
----
 
-### ✔️ Maintainer / CNA Notes
-
-This advisory is published to document the observed behavior in the PyPI distribution of PLY 3.11 and to raise awareness of the security implications of unsafe deserialization via undocumented functionality.
-
-
-Just tell me.
