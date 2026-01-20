@@ -3,7 +3,7 @@
 # 🚨 Undocumented Remote Code Execution in PLY CVE‑2025‑56005
 
 ```
-CVE ID: CVE‑2025‑56005 (**RESERVED**)
+CVE ID: CVE‑2025‑56005
 Reported by: Ahmed Abdelmoumen
 Disclosure Date: July 1, 2025
 Affected Product: PLY (Python Lex‑Yacc)
